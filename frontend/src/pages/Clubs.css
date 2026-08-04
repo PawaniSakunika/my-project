@@ -1,0 +1,150 @@
+.clubs-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.clubs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-club-btn {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-club-btn:hover {
+  background-color: #e64a19;
+}
+
+.clubs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.club-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.club-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.club-card-header h3 {
+  margin: 0;
+  color: #333;
+}
+
+.club-status-badges {
+  display: flex;
+  gap: 10px;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge-active { background-color: #e8f5e9; color: #2e7d32; }
+.badge-inactive { background-color: #ffebee; color: #c62828; }
+.badge-pending { background-color: #fff3e0; color: #e65100; }
+.badge-approved { background-color: #e3f2fd; color: #1565c0; }
+
+.club-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.club-section h4 {
+  margin: 0 0 5px 0;
+  color: #009688;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 3px;
+}
+
+.club-section p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.club-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn-approve {
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-toggle {
+  background-color: #607d8b;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-edit-club {
+  background-color: #ff9800;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Modal specific for huge form */
+.club-modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 95%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.section-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 2px solid #ff5722;
+  padding-bottom: 5px;
+  grid-column: span 2;
+}
+
+.optional-section-title {
+  border-bottom: 2px solid #9e9e9e;
+}

@@ -1,0 +1,159 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background:
+    linear-gradient(90deg, rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.28)),
+    url('../assets/login_background.png') center/cover no-repeat;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-box {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 45px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 650px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.register-header h2 {
+  margin: 0 0 8px 0;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.register-header p {
+  margin: 0;
+  color: #475569;
+  font-size: 14px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-group.full-width {
+  width: 100%;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.input-group input:not([type="radio"]), .input-group select {
+  padding: 12px 16px;
+  border: 1px solid #cbd5e1;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  font-size: 15px;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.input-group input:not([type="radio"]):focus, .input-group select:focus {
+  border-color: #3b82f6;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15), inset 0 1px 3px rgba(0,0,0,0.02);
+}
+
+/* --- Edge/IE බ්‍රවුසරයේ ඉබේ එන අමතර අයිකන් එක මකා දැමීම --- */
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+/* --- Password Field සඳහා එකතු කළ අලුත් CSS --- */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+/* ----------------------------------------------- */
+
+.register-button {
+  background: linear-gradient(to right, #2563eb, #1e40af);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
+}
+
+.register-button:active {
+  transform: translateY(0);
+}
+
+.register-footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.register-footer a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.register-footer a:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}

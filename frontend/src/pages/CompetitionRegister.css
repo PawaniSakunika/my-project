@@ -1,0 +1,52 @@
+.register-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.register-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn-back {
+  background-color: #607d8b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.btn-back:hover {
+  background-color: #455a64;
+}
+
+.add-register-btn {
+  background-color: #2196F3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-register-btn:hover {
+  background-color: #1976D2;
+}
+
+.athlete-preview {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #e3f2fd;
+  border-radius: 4px;
+  border-left: 4px solid #2196F3;
+}
+
+.athlete-preview p {
+  margin: 5px 0;
+}

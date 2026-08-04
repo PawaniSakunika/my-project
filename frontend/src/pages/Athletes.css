@@ -1,0 +1,293 @@
+.athletes-page-container {
+  padding: 20px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* TOP CONTROLS */
+.athletes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-athlete-btn {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.add-athlete-btn:hover {
+  background-color: #111827;
+}
+
+.search-box-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 6px 12px;
+  width: 260px;
+}
+
+.search-icon {
+  color: #94a3b8;
+  margin-right: 8px;
+}
+
+.athlete-search {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* 🔄 MAIN SIDE-BY-SIDE LAYOUT GRID */
+.athletes-main-layout {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.athlete-table-panel.full-width {
+  grid-column: 1 / -1;
+}
+
+/* PANELS GENERICS */
+.athlete-form-panel, .athlete-table-panel {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.panel-header {
+  background-color: #fff;
+  padding: 14px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+.panel-close-btn {
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* SIDE FORM STYLES */
+.athlete-side-form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.athlete-side-form label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: -4px;
+}
+
+.athlete-side-form input[type="text"],
+.athlete-side-form input[type="number"],
+.form-dropdown-select,
+.athlete-side-form textarea {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.form-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.readonly-input {
+  background-color: #f1f5f9;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.auto-fill-section {
+  background-color: #f8fafc;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px dashed #cbd5e1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.auto-fill-section h4 {
+  margin: 0 0 4px 0;
+  font-size: 12px;
+  color: #334155;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 4px;
+}
+
+/* FORM FOOTER BUTTONS */
+.form-actions-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 15px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 12px;
+}
+
+.btn-cancel, .btn-edit-mode, .btn-save {
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-cancel { background-color: #e2e8f0; color: #475569; }
+.btn-edit-mode { background-color: #f1f5f9; color: #64748b; }
+.btn-save { background-color: #10b981; color: white; display: flex; align-items: center; gap: 5px; }
+
+/* TABLE STYLES */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.athlete-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.athlete-table th {
+  background-color: #f8fafc;
+  color: #1e3a8a;
+  padding: 12px 16px;
+  font-weight: 600;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.athlete-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+
+/* ✅ GENDER BADGE STYLES (M / F) */
+/* ✅ GENDER BADGE STYLES (ලස්සන කොටු පැඩ් එකක් විදිහට) */
+.badge-gender {
+  padding: 3px 7px;
+  border-radius: 4px; /* Weight class එක වගේම ලස්සන කොටු හැඩයක් */
+  font-weight: 700;
+  font-size: 12px;
+  display: inline-block;
+  text-align: center;
+  min-width: 20px; /* අකුර මැදට ගන්න නියමිත ඉඩක් */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* පොඩි professional පෙනුමක් */
+}
+
+/* Male (M) - Soft Blue */
+.gender-m {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+/* Female (F) - Soft Pink */
+.gender-f {
+  background-color: #fce7f3;
+  color: #be185d;
+  border: 1px solid #fbcfe8;
+}
+
+.badge-weight {
+  background-color: #eff6ff;
+  color: #1e40af;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.txt-bold { font-weight: 700; color: #0f172a; }
+
+.table-edit-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.table-edit-btn:hover { background-color: #2563eb; }
+.no-data { text-align: center; color: #94a3b8; padding: 30px !important; 
+}
+
+/* 📍 LOCATION DETAILS SECTION STYLES */
+.location-section {
+  background-color: #f0fdf4; /* ළා කොළ පාටක් (පහසුවෙන් වෙන් කරලා අඳුරගන්න) */
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #bbf7d0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.location-section h4 {
+  margin: 0 0 4px 0;
+  font-size: 12px;
+  color: #166534;
+  border-bottom: 1px solid #bbf7d0;
+  padding-bottom: 4px;
+}

@@ -1,0 +1,251 @@
+.profile-page {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ========= USER HEADER CARD ========= */
+.profile-header-card {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  border-radius: 16px;
+  padding: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+.profile-header-info h2 {
+  margin: 0 0 6px 0;
+  font-size: 22px;
+}
+
+.profile-header-info p {
+  margin: 3px 0;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.role-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.role-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ========= SECTION CARDS ========= */
+.profile-section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.profile-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 12px;
+}
+
+.profile-section-header h3 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 17px;
+}
+
+.profile-section-header span {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.profile-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.profile-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-form-group.full-width {
+  grid-column: span 2;
+}
+
+.profile-form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+.profile-form-group input,
+.profile-form-group select {
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1e293b;
+  background: #f8fafc;
+  transition: border-color 0.2s;
+}
+
+.profile-form-group input:focus,
+.profile-form-group select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background: white;
+}
+
+.profile-form-group input:read-only {
+  background: #f1f5f9;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* ========= BUTTONS ========= */
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.btn-save-profile {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-save-profile:hover {
+  opacity: 0.9;
+}
+
+.btn-add-secondary {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-add-secondary:hover {
+  opacity: 0.9;
+}
+
+.btn-change-pass {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-change-pass:hover {
+  opacity: 0.9;
+}
+
+/* ========= SETTINGS SECTION ========= */
+.settings-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.settings-toggle h3 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 17px;
+}
+
+.settings-body {
+  margin-top: 16px;
+  border-top: 2px solid #f1f5f9;
+  padding-top: 16px;
+}
+
+.settings-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+/* ========= ADD SECONDARY TYPE SELECTOR ========= */
+.secondary-type-selector {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.btn-type-option {
+  flex: 1;
+  padding: 14px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  background: white;
+  transition: all 0.2s;
+}
+
+.btn-type-option:hover,
+.btn-type-option.selected {
+  border-color: #8b5cf6;
+  background: #f5f3ff;
+  color: #7c3aed;
+}
+
+@media (max-width: 640px) {
+  .profile-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-form-group.full-width {
+    grid-column: span 1;
+  }
+
+  .settings-row {
+    grid-template-columns: 1fr;
+  }
+}
